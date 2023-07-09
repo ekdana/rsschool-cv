@@ -2,9 +2,189 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>CV</title>
   </head>
+
+
 <body>
-  <h1>Dana Kurmangali</h1>
+    <div class="section_one">
+
+        <div class="header">
+            <nav>
+            <ul class="nav_links">
+                <li><a href="#about me">About me</a></li>
+                <li><a href="#main">Experience</a></li>
+                <li><a href="#main">Education</a></li>
+                <li><a href="#about me">Contact</a></li>
+            </ul>
+            </nav> 
+        </div>
+
+        <div id="about me" class="main">
+            <div class="name"><h1>Hi, I'm Dana Kurmangali</h1></div>
+            <br>
+            <div class="content">I am a Computer Science student at Nazarbayev University. <br>I am looking for the job or internship where I can improve my hard skills.</div>
+            <br>
+            <hr class="line">
+
+            <div class="contacts">
+              <div class="github"><a href="https://github.com/ekdana"><img src="🦆 icon _github_.png" alt="github"></a></div>
+              <div class="email"><a href="mailto: dana.kurmangali@nu.edu.kz"><img src="🦆 icon _gmail_.png" alt="gmail"></a></div>
+            </div>
+          </div>
+    </div>
+
+    <div id="main" class="section_two">
+      <div class="photo"><img src="me.svg" width="200px" height="200px" alt="me"></div>
+      <div class="education"><h2>Education</h2>Nazarbayev University, School of Engineering and Digital Sciences, Computer Science </div>
+      <div class="experience"><h2>Experience</h2> Member of UNEPG by UNICEF Kazakhstan & KazNU and robotics trainer</div>
+     
+     
+        <div class="skills">
+          <h2>Skills</h2>  
+          <ul>
+            <li>HTML,CSS</li>
+            <li>C/C++</li>
+            <li>Figma</li>
+            <li>Adobe Photoshop</li>
+            <li>Microsoft Office</li>
+          </ul>
+        </div>
+
+        <div class="languages">  
+          <h2>Languages</h2>
+          <ul>
+            <li>Kazakh</li>
+            <li>English</li>
+            <li>Russian</li>
+          </ul>
+        </div>
+
+        <div class="code">
+          <hr class="divider">
+          <br>
+          <br>
+          <br>
+          <h2>Code Examples</h2>
+          <br>
+          <div class="square"></div>
+          <div class="codee">
+          <code>
+            <pre>
+#include <stdio.h>
+    int main() {
+    FILE *infile;
+    FILE *outfile;
+            
+    infile = fopen("in.txt", "r");
+    outfile = fopen("out.txt", "w");
+            
+    int p;
+    printf ("Enter the value of p for encryption\n");
+    scanf ("%i", &p);
+            
+    if (infile== NULL || outfile== NULL){
+        printf("Problem opening file\n");
+        return 1;
+    } else printf("out.txt has been created successfully.\n");
+            
+    char ch, shift;
+    while((ch = fgetc(infile))!= EOF){
+        if ('A'<= ch && ch<= 'Z'){
+            if (p > 26){
+            p = p % 26;
+        }
+    ch = ch + p;
+            
+    int A = 65;
+        if (ch > 90){
+            shift = ch % 90;
+            h = shift + A - 1;
+        }
+    }
+        fputc( ch, outfile );
+    }
+            
+    fclose(infile);
+    fclose(outfile);
+            
+    return 0;
+}
+            </pre>
+          </code>
+          </div>
+        </div>
+
+        <div class="square1"></div>
+          <div class="codee1">
+          <code>
+            <pre>
+#include <stdio.h>
+
+int main() {
+  int n,l,m;
+  printf("Please input the size of the labyrinth:");
+  scanf("%i", &n);
+
+  int size[n][n];
+  char i_size[n][n];
+  printf("Please input the labyrinth matrix:");
+
+  for (l=0;l<n;l++){
+    for(m=0;m<n;m++){
+      scanf("%i", &size[l][m]);
+      i_size[l][m] = '.';
+    }
+  }
+
+  for (l = 0; l < n; l++) {
+    for (m = 0; m < n; m++) {
+      if ((size[l][m]) == 0) {
+        if((l == 0 && m == 0) || (l > 0 && size[l-1][m] == 0) || (m > 0 && 
+        (size[l][m-1] == 0)) ){
+        i_size[l][m] = 'P';
+        }
+    }
+
+        if(i_size[l][m] == 'P'){
+          if ((l < n-1 && m < n-1) && (size[l+1][m] == 1 && 
+          size[l][m+1] == 1)){
+          i_size[l][m] = '.';
+          }
+        }
+    }
+  }
+  for (int l = 0; l < n; l++) {
+    for (int m = 0; m < n; m++) {
+      printf("%c ", i_size[l][m]);
+    }
+    printf("\n");
+  }
+
+  if (((size[0][0]) == 1 || size[n-1][n-1] == 1)) {
+    printf("Unfortunately, no path exists");
+  }
+  return 0;
+}
+            </pre>
+          </code>
+          </div>
+        </div>
+    </div>
+
+    <div class="footer">
+      <a href="https://rs.school/js/"><img src="rs_school_js.svg" alt="rs" href width="200px" height="180px" class="school"></a>
+      <div class="github1"><a href="https://github.com/ekdana"><img src="🦆 icon _github_.png" alt="github"></a></div>
+    <div class="year">© 2023 Dana Kurmangali</div>
+    </div>
+
+    </div>
+
+
 </body>
+
+
 </html>
