@@ -1,3 +1,240 @@
-h1{
-color: blue;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&family=Prompt:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.section_one{
+    background: url(header-background.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 823px;
+}
+
+.content{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    padding: 30px;
+
+}
+
+.line{
+    width: 533px;
+    height: 0.8px;
+    flex-shrink: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main{
+    color: white;
+    text-align: center;
+    padding-top: 60px;
+}
+
+
+.content{
+    font-size: 25px;
+    font-weight: 200;
+}
+
+.nav_links{
+    list-style: none;
+    list-style: none;
+    width: 761px;
+    height: 115px;
+    flex-direction: column;
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.9px;
+}
+
+.email{
+    display: inline-block;
+    padding-left: 50px;
+}
+
+.github{
+    display: inline-block;
+}
+
+
+a:link{
+    text-decoration: none;
+}
+.nav_links li{
+    display:inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+    color:whitesmoke;
+}
+
+.nav_links li a:hover{
+   color:blanchedalmond
+}
+
+.section_two{
+    width: auto;
+    height: 1500px;
+    flex-shrink: 0;
+    background: #1A1819;
+}
+
+.photo{
+    margin-left: 100px;
+    width: 50px;
+    height: 50px;
+
+}
+
+.education{
+    display: flex;
+    width: 745px;
+    height: 254px;
+    flex-direction: column;
+    color: #FFF;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.6px;
+    display: flex;
+    margin-left: 470px;
+    margin-top: -5vh;
+
+}
+
+.experience{
+    display: flex;
+    width: 745px;
+    height: 254px;
+    flex-direction: column;
+    color: #FFF;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.6px;
+    display: flex;
+
+    margin-left: 470px;
+    margin-top: -17vh;
+
+}
+
+
+.skills{
+    display: inline-block;
+    width: 745px;
+    height: 254px;
+    flex-direction: column;
+    color: #FFF;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.6px;
+    display: flex;
+    margin-left: 110px;
+    margin-top: -17vh;
+
+}
+
+.languages{
+    display: inline-block;
+    width: 745px;
+    height: 254px;
+    flex-direction: column;
+    color: #FFF;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.6px;
+    display: flex;
+
+    margin-left: 480px;
+    margin-top: -32vh;
+}
+
+.square{
+    width: 525px;
+    height: 670px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.41);
+}
+
+.codee{
+    margin-top: -635px;
+    margin-left: 28px;
+}
+
+.code{
+    color: #FFF;
+    margin-left: 110px
+}
+
+.divider{
+    margin-left: -110px;
+}
+
+.square1{
+    width: 525px;
+    height: 670px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.41);
+    margin-top: -635px;
+    margin-left: 700px;
+}
+
+.codee1{
+    margin-top: -635px;
+    margin-left: 720px;
+    color: white;
+}
+
+.footer{
+    width: 100%;
+    height: 200px;
+    flex-shrink: 0;
+    border-radius: 0px;
+    background: rgba(255, 255, 255, 0.2);
+    margin-top: -200px;
+}
+
+.github1{
+    margin-top: -150px;
+    margin-left: 765px;
+}
+
+.school{
+    margin-left: 465px;
+}
+.year{
+    margin-top: 50px;
+    margin-left: 590px;
 }
